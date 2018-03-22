@@ -3,6 +3,7 @@
 var http = require("http");
 var url = require("url");
 
+
 http.createServer(function(request, response) {
     /*
     request.on('error', function(err) {
@@ -20,6 +21,13 @@ http.createServer(function(request, response) {
         response.end();
     }
     */
+    var parsedUrl = url.parse(request.url, true);
+    var queryAsObject = parsedUrl.query;
+    var username = queryAsObject.username;
+    var password = queryAsObject.password;
+    
+    response.writeHead(200, {"content-Type": "text/plain"});
+    response.end('Hello '+ username + ', your password is: ' + password);
     
 }).listen(8010);
 
