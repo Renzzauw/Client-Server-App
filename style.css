@@ -1,0 +1,23 @@
+* {
+    font-family: 'Alef';
+}
+
+body {
+    background-color: rgb(20,20,20);
+}
+
+#signup-forms-container { 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+    grid-auto-columns: auto;
+}
+
+#signup-forms-container p {
+    font-size: 100%;
+}
+
+.sign-up-forms {
+    padding: 20px;
+    background-color: rgba(200,200,200,0.6);
+}
