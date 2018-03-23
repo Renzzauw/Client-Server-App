@@ -1,9 +1,10 @@
 * {
     font-family: 'Alef';
+    color: rgb(24, 24, 24);
 }
 
 body {
-    background-color: rgb(20,20,20);
+    background-color: rgb(223, 223, 223);
 }
 
 #signup-forms-container { 

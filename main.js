@@ -4,7 +4,8 @@ var http = require("http");
 var url = require("url");
 
 http.createServer(function(request, response) {
-    /*
+    
+    // error handling
     request.on('error', function(err) {
         console.error(err);
         response.statusCode = 400;
@@ -19,7 +20,7 @@ http.createServer(function(request, response) {
         response.statusCode = 404;
         response.end();
     }
-    */
+    
     
 }).listen(8010);
 
